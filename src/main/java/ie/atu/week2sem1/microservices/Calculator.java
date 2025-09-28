@@ -12,6 +12,8 @@ public class Calculator {
         int result = 0;
         if (operation.equals("add")){
             result = num1 + num2;
+        } else if (operation.equals("subtract")){
+            result = num1 - num2;
         }
         return String.valueOf(result);
     }
