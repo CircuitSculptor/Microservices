@@ -12,7 +12,7 @@ public class RequestController {
         return "Hello";
     }
 // Using GET request
-    @GetMapping("/greet/{name}")
+    @GetMapping("greet/{name}")
     public String greetByName(@PathVariable String name)
     {
         return "Hello " + name + "!";
@@ -25,7 +25,8 @@ public class RequestController {
     }
 
     @GetMapping("/person")
-    public Person getPerson(){
+    public Person getPerson()
+    {
         return new Person("Bartek", 20);
     }
 
